@@ -325,6 +325,19 @@ ul {
     padding: 0px 35px;
     }
 
+    .Volver {
+        cursor: pointer;
+        display: inline-block;
+        border: 0em;
+        font-weight: bold;
+        padding: 10px 20px;
+        background: #680a80;
+        color: #ffffff;
+        font-size: 15px;
+        border: 1px solid #ffffff;
+        margin: 10px 10px;
+    }
+
 
 
 
