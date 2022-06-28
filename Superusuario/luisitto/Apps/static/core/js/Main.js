@@ -62,20 +62,6 @@ $('#validate').click(function() {
 		  })
     }
 });
-$('#login').click(function() {
-	Swal.fire({
-		title: "Aún estamos trabajando en esta parte",
-		width: 600,
-		padding: '3em',
-		color: '#716add',
-		backdrop: `
-		  rgba(0,0,123,0.4)
-		  url("/img/nyan-cat.gif")
-		  left top
-		  no-repeat
-		`
-	  })
-});
 
 /*/Alerta CRUD
 let text = "¿Seguro que quieres eliminar la cuenta?";

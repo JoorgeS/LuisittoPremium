@@ -24,28 +24,28 @@
     </div>
     <div class="container">
         <nav class="navMain">
-            <img src="img/logo.png" alt="Luisittopremium logo" class="nav-brand">
+            <img src="{% static 'core/img/logo.png' %}" alt="Luisittopremium logo" class="nav-brand">
             <ul class="nav-menu">
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a href="{% url 'index' %}">Inicio</a>
                 </li>
                 <li>
-                    <a href="ofertas.html">Ofertas</a>
+                    <a href="{% url 'ofertas' %}">Ofertas</a>
                 </li>
                 <li>
-                    <a href="TyC.html">Términos y Condiciones</a>
+                    <a href="{% url 'TyC' %}">Términos y Condiciones</a>
                 </li>
                 <li>
-                    <a href="Somos.html">Quiénes Somos</a>
+                    <a href="{% url 'Somos' %}">Quiénes Somos</a>
                 </li>
                 <li>
-                    <a href="contacto.html">Crear Cuenta</a>
+                    <a href="{% url 'contacto' %}">Crear Cuenta</a>
                 </li>
                 <li>
-                    <a href="Login.html">Iniciar Sesion</a>
+                    <a href="{% url 'login' %}">Iniciar Sesion</a>
                 </li>
                 <li>
-                    <a href="registro.html">Contacto</a>
+                    <a href="{% url 'registro' %}">Contacto</a>
                 </li>
             </ul>
             <ul class="nav-menu-right">
@@ -146,7 +146,7 @@
     <!--Scroll reveal!-->
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="Main.js"></script>
+    <script src="{% static 'core/js/Main.js' %}"></script>
 </body>
 
 </html>

@@ -103,7 +103,7 @@
                 <i class="fa-regular fa-calendar-check"></i> Netflix crackeada <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> garantia por el tiempo contratado <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> Disfruta de tus series y peliculas favoritas hasta en 4 dispositivos!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
+                <a href="{% url 'ofertas' %}">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
             </div>
             <div>
                 <img src="{% static 'core/img/spotify.jpg' %}" alt="imagenSpotify">
@@ -111,7 +111,7 @@
                 <i class="fa-regular fa-calendar-check"></i> Spotify Personal <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> garantia por el tiempo contratado <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> Disfruta de musica con excelente calidad de audio!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
+                <a href="{% url 'ofertas' %}">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
             </div>
             <div>
                 <img src="{% static 'core/img/hbomax.jpg' %}" alt="imagenHbomax">
@@ -119,7 +119,7 @@
                 <i class="fa-regular fa-calendar-check"></i> Hbo Max Privada 3 dispositivos <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> garantia por el tiempo contratado <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> Hbo ofrece su gran catalogo en series y peliculas en HD!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
+                <a href="{% url 'ofertas' %}">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
             </div>
             <div>
                 <img src="{% static 'core/img/crunchyroll.jpg' %}" alt="imagenCrunchyroll">
@@ -127,7 +127,7 @@
                 <i class="fa-regular fa-calendar-check"></i> Crunchyroll 3 pantallas <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> garantia por el tiempo contratado <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> disfruta de un amplio catalogo de animes, sin anuncios y en HD!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
+                <a href="{% url 'ofertas' %}">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
             </div>
         </div>
         <!--Correo!-->
@@ -164,7 +164,7 @@
                 <i class="fa-regular fa-calendar-check"></i> Cuenta crackeada <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> Garantia por el tiempo contratado <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> Ideal para el vengador de la casa o la princesa de la familia Disney llega con su catalago de peliculas y series exclusivas!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
+                <a href="{% url 'ofertas' %}">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
            
             </div>
             <div>
@@ -174,7 +174,7 @@
                 <i class="fa-regular fa-calendar-check"></i> Cuenta privada sin caidas <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> garantia por el tiempo contratado <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> Disfruta de amazon y su catalogo de series ademas de peliculas en HD gracias a su suscripcion a prime video!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
+                <a href="{% url 'ofertas' %}">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
            
             </div>
             <div>
@@ -184,7 +184,7 @@
                 <i class="fa-regular fa-calendar-check"></i> Cuenta Personal sin caidas <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> Garantia por el tiempo contratado <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> Escucha tu música favorita y descargatus videos, sin anuncios y en la calidad que necesites!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
+                <a href="{% url 'ofertas' %}">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
            
             </div>
             <div>
@@ -194,34 +194,11 @@
                 <i class="fa-regular fa-calendar-check"></i> Cuena Personal sin caidas <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> Garantia por el tiempo contratado <br> <br>
                 <i class="fa-regular fa-calendar-check"></i> Paramount se une al battle royale de aplicaciones streaming con su amplio catalogo de series y peliculas exclusivas!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
+                <a href="{% url 'ofertas' %}">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
             
             </div>
         </div>
     </div>
-<hr>
-    <center>
-    <table border="1">
-        <tr>
-            <th>Nombre</th>
-            <th>Precio</th>
-            <th>Duracion</th>
-            <th>Modificar</th>
-            <th>Eliminar</th>
-        </tr>
-        {% for c in Cuentas%}
-        <tr>
-            <td>{{c.nombreCuenta}}</td>
-            <td>{{c.precio}}</td>
-            <td>{{c.duracion}}</td>
-            <td><a href="{% url 'modificarCuenta' c.nombreCuenta %}"> Mod </a></td>
-            <td><a href="{% url 'eliminarCuenta' c.nombreCuenta %}"><button onclick="myFunction()">X</button> </a></td>
-        </tr>
-        {% endfor %}
-    <a href="{% url 'agregarCuenta' %}">Agregar Cuenta</a>
-    </table>
-    </center>
-
     <!-- Footer -->
 <footer>
         <div class="main-content">
