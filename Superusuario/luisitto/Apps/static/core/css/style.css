@@ -356,6 +356,7 @@ ul {
 /* pie de pag*/
 
 footer {
+    margin-top: 80px;
     width: 100%;
     background: #111111;
 }
