@@ -939,6 +939,17 @@ main{
     .formulario__grupo-btn-enviar{
         padding-top: 100px;
     }
+     /*agregar cuenta*/
+     #formulario1{
+        margin: 25px;
+        padding: 100px;
+        background: #000;
+        font-size: 19px;
+    }
+    .nav-brand{
+        width: 64px;
+        margin: 10px;
+    }
 
     
 }
