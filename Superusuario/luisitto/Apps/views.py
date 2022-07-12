@@ -94,4 +94,7 @@ def eliminarCuenta(request, nombreCuenta):
     messages.success(request, "modificado Correctamente")
 
     return redirect(to='ofertas')
+    
+def pagoexitoso(request):
+    return render(request, 'core/pagoexitoso.html')
 
