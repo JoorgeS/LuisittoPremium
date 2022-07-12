@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,13 +12,12 @@
     <!--font awesome!-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <!--CSS!-->
-    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <link rel="stylesheet" href='{% static "core/css/style.css" %}'>
     <!--Font Oswald!-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
-
 <!--Menu!-->
 
 <body>
@@ -50,7 +49,18 @@
                 <li>
                     <a href="{% url 'registro' %}">Contacto</a>
                 </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hola {{ user.username | upper}}
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="{% url 'logout' %}">Cerrar Sesión</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
+           
         </nav>
         <hr>
         <!--Terminos y condiciones!-->
@@ -58,35 +68,36 @@
             <h1>Términos y Condiciones</h1>
         </div>
         <div class="parrafos" id="parrafos">
-            <p>
-                Página dedicada a la compra y venta de cuentas premium, mejores precios, ofertas y soporte de CHILE, que esperas para contratar y probar nuestros servicios totalmente garantizados
-                cumpliendo los tiempos de garantía y brindando el mejor soporte para dar una buena experiencia de cuentas de streaming y sobre todo buscamos ahorrar dinero, ofreciendo servicios.
-                Mas económico que en las mismas páginas.
-                
-
-            </p>
-            <div class="hide" id="hidetext">
-                <p>Toda cuenta contratada, se respetará su garantía hasta la fecha de termino de esta, es decir si compró una cuenta de 1 mes el dia 15 de julio, su garantía acaba el 15 de agosto
-                    usted decide cuantos meses de garantía contratará, va dependiendo del servicio y la cuenta de streaming, desde 1 mes hasta 3 meses, todo cliente tiene derecho a reembolso directo
-                    a su cuenta bancaria dentro de los 2 dias posterior a su compra, una vez hecho el reembolso la cuenta se cancelará o bien el cliente perderá acceso a ella. En caso de caida masivas de cuentas
-                    el cliente tendrá derecho a soporte, en caso de poder reponer con una misma cuenta el cliente tiene derecho a cambio de cuenta con una de valor equivalente o superior en precio 
-                    (teninendo en cuenta que el error fue por parte del proveedor) si el cliente no esta de acuerdo con el cambio tiene derecho a un reembolso directo, realizar una nueva compra es opcional.
-
-
-                </p>
+            <div class="parrafos" id="parrafos">
                 <p>
-                El cliente deberá seguir instrucciones de uso dependiendo del servicio de streaming, en caso de descubrir que no siga o respete dichas reglas el cliente perderá su garantía, su caso puede verse más a 
-                fondo con soporte para ver la situación, las reglas de uso deben de seguirse de forma estricta, dado que pueden afectar el funcionamiento de estas o directamente provocar la caida del servicio a proposito.
-                Se busca que el cliente pueda obtener cuentas de plataformas de steaming a un menor precio que en las paginas legales, dado que las plataformas constantemente suben sus precios haciendo que los consumidores 
-                gasten cada vez más en dichos servicios. 
+                    Página dedicada a la compra y venta de cuentas premium, mejores precios, ofertas y soporte de CHILE, que esperas para contratar y probar nuestros servicios totalmente garantizados
+                    cumpliendo los tiempos de garantía y brindando el mejor soporte para dar una buena experiencia de cuentas de streaming y sobre todo buscamos ahorrar dinero, ofreciendo servicios.
+                    Mas económico que en las mismas páginas.
+                    
+    
                 </p>
-                <p>
-                    El cliente tiene todo el derecho a apelar con soporte en caso de ser necesario, libre de preguntar y consultar por su plataforma, son validas preguntas como 
-                    "donde puedo ver X pelicula", recomendaciones de series o peliculas, dudas o preguntas sobre el uso de las cuentas, explicacion detallada de las instrucciones de uso de los servicios
-                    . Por ningun motivo se explicará el metodo de creación de creación de las cuentas, ni nada relacionado a ello, dado que como empresa no regalamos nuestro trabajo pero si nos dedicamos 
-                    a satisfacer la necesidad de nuestro cliente por consumir nuestros servicios.
+                <div class="hide" id="hidetext">
+                    <p>Toda cuenta contratada, se respetará su garantía hasta la fecha de termino de esta, es decir si compró una cuenta de 1 mes el dia 15 de julio, su garantía acaba el 15 de agosto
+                        usted decide cuantos meses de garantía contratará, va dependiendo del servicio y la cuenta de streaming, desde 1 mes hasta 3 meses, todo cliente tiene derecho a reembolso directo
+                        a su cuenta bancaria dentro de los 2 dias posterior a su compra, una vez hecho el reembolso la cuenta se cancelará o bien el cliente perderá acceso a ella. En caso de caida masivas de cuentas
+                        el cliente tendrá derecho a soporte, en caso de poder reponer con una misma cuenta el cliente tiene derecho a cambio de cuenta con una de valor equivalente o superior en precio 
+                        (teninendo en cuenta que el error fue por parte del proveedor) si el cliente no esta de acuerdo con el cambio tiene derecho a un reembolso directo, realizar una nueva compra es opcional.
+    
+    
                     </p>
-            </div> 
+                    <p>
+                    El cliente deberá seguir instrucciones de uso dependiendo del servicio de streaming, en caso de descubrir que no siga o respete dichas reglas el cliente perderá su garantía, su caso puede verse más a 
+                    fondo con soporte para ver la situación, las reglas de uso deben de seguirse de forma estricta, dado que pueden afectar el funcionamiento de estas o directamente provocar la caida del servicio a proposito.
+                    Se busca que el cliente pueda obtener cuentas de plataformas de steaming a un menor precio que en las paginas legales, dado que las plataformas constantemente suben sus precios haciendo que los consumidores 
+                    gasten cada vez más en dichos servicios. 
+                    </p>
+                    <p>
+                        El cliente tiene todo el derecho a apelar con soporte en caso de ser necesario, libre de preguntar y consultar por su plataforma, son validas preguntas como 
+                        "donde puedo ver X pelicula", recomendaciones de series o peliculas, dudas o preguntas sobre el uso de las cuentas, explicacion detallada de las instrucciones de uso de los servicios
+                        . Por ningun motivo se explicará el metodo de creación de creación de las cuentas, ni nada relacionado a ello, dado que como empresa no regalamos nuestro trabajo pero si nos dedicamos 
+                        a satisfacer la necesidad de nuestro cliente por consumir nuestros servicios.
+                        </p>
+                </div> 
             <button id="myBtn">Read more</button>
         </div>
     </div>

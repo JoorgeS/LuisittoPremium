@@ -46,13 +46,18 @@
             <li>
                 <a href="{% url 'registro' %}">Contacto</a>
             </li>
-        </ul>
-        <ul class="nav-menu-right">
             <li>
-                <a href="#"></a>
-                <i class="fas fa-search"></i>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Hola {{ user.username | upper}}
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="{% url 'logout' %}">Cerrar Sesión</a>
+                    </div>
+                </div>
             </li>
         </ul>
+        
     </nav>
 </div>
 <div class="boxform">
@@ -163,7 +168,7 @@
                     <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                 </div>
             </form-->
-            <img class="d-block-w-100" src="img/logo sin fondo.png" alt="Logo sin fondo">
+            <img class="d-block-w-100" src="{% static 'core/img/logo-sin- fondo.png' %}" alt="Logo sin fondo">
         </div>
     </div>
     <div class="bottom">

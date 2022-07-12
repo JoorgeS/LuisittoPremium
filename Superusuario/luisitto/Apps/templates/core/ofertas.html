@@ -48,6 +48,16 @@
                 <li>
                     <a href="{% url 'registro' %}">Contacto</a>
                 </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hola {{ user.username | upper}}
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="{% url 'logout' %}">Cerrar Sesión</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
             <ul class="nav-menu-right">
                 <li>
