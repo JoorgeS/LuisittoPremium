@@ -26,28 +26,28 @@
     </div>
     <div class="container">
         <nav class="navMain">
-            <img src="img/logo.png" alt="Luisittopremium logo" class="nav-brand">
+            <img src="{% static 'core/img/logo.png' %}" alt="Luisittopremium logo" class="nav-brand">
             <ul class="nav-menu">
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a href="{% url 'index' %}">Inicio</a>
                 </li>
                 <li>
-                    <a href="ofertas.html">Ofertas</a>
+                    <a href="{% url 'ofertas' %}">Ofertas</a>
                 </li>
                 <li>
-                    <a href="TyC.html">Términos y Condiciones</a>
+                    <a href="{% url 'TyC' %}">Términos y Condiciones</a>
                 </li>
                 <li>
-                    <a href="Somos.html">Quiénes Somos</a>
+                    <a href="{% url 'Somos' %}">Quiénes Somos</a>
                 </li>
                 <li>
-                    <a href="contacto.html">Crear Cuenta</a>
+                    <a href="{% url 'contacto' %}">Crear Cuenta</a>
                 </li>
                 <li>
-                    <a href="Login.html">Iniciar Sesion</a>
+                    <a href="{% url 'login' %}">Iniciar Sesion</a>
                 </li>
                 <li>
-                    <a href="registro.html">Contacto</a>
+                    <a href="{% url 'registro' %}">Contacto</a>
                 </li>
             </ul>
             <ul class="nav-menu-right">
@@ -65,23 +65,23 @@
         </div>
         <div class="parrafos">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At mollitia consectetur fugiat labore vero quod nihil unde architecto assumenda nam quidem aut, aliquid provident dignissimos itaque eaque! In, nobis provident. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dolores rerum, ad fugit, sed necessitatibus possimus minima deserunt praesentium repellat velit perferendis doloremque saepe tempora rem eos ea animi consequuntur commodi. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Dolores et, impedit quisquam soluta, repellendus quas eaque facere magnam minus accusamus rem animi voluptate fuga numquam odio. Et dolore tempora delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti reiciendis
-                voluptatem culpa sit numquam laborum dolor iure, consectetur aut blanditiis exercitationem nobis saepe est rerum eos ad odit possimus. Exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aliquam neque
-                molestias eum iusto quis ipsam expedita! Quod, error iure harum aspernatur ut amet ipsum dicta necessitatibus, vel, iusto aliquid!
+                Página dedicada a la compra y venta de cuentas premium, mejores precios, ofertas y soporte de CHILE, que esperas para contratar y probar nuestros servicios totalmente garantizados
+                cumpliendo los tiempos de garantía y brindando el mejor soporte para dar una buena experiencia de cuentas de streaming y sobre todo buscamos ahorrar dinero, ofreciendo servicios.
+                Mas economico que en las mismas páginas
 
+                Nuestro trabajo principal es ayudar al cliente a ahorrar dinero, y brindar la mejor experiencia de las plataformas que ofrecemos, nuestro servicio es dinámico y con entregas
+                rapidas, algunos de nuestros objetivos son rapidez, confianza, satisfaccion y dinamico, dado que con un buen soporte siempre podremos entregar soluciones rapidas al cliente.
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nam, voluptate dicta eius impedit provident quasi fuga a dolorum quidem nesciunt vero ducimus alias nemo, aliquid velit dignissimos quis odit. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Fugiat est qui magnam facere quisquam odit earum, sint iste veniam libero hic accusantium delectus quidem perspiciatis veritatis illo quasi voluptate obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Veniam, nostrum perferendis unde consequuntur minima id est distinctio quidem, explicabo, corporis sapiente natus. Perspiciatis assumenda laudantium illo exercitationem molestias, ratione illum.
-
+            <p>
+                Dedicados y comprometidos con la correcta venta de cuentas, más de 2 años de servicios, profesionales y aptos con experiencia en ventas y siempre se busca el buen trato con el cliente
+                puedes encontrarnos en redes sociales y mi whatsapp personal, siempre abierto a dudas y consultas, más de 300 ventas a la fecha con un 90% de aprobacion entre los clientes, creciendo día a día, gracias a la publicidad positiva, 
+                recomendaciones de clientes y siempre enfocado y responsable en el trabajo.
             </p>
             
         </div>
     <!--Imagen Logo!-->
         <div>
-            <img src="img/logo.png" alt="Luisittopremium logo" class="image-Logo">
+            <img src="{% static 'core/img/logo.png' %}" alt="Luisittopremium logo" class="image-Logo">
         </div>
         </div>
         <!--Foother!-->
@@ -154,7 +154,7 @@
     <!--Scroll reveal!-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="Main.js"></script>
+    <script src="{% static 'core/js/Main.js' %}"></script>
 </body>
 
 </html>

@@ -1,6 +1,5 @@
 from django.urls import path
 from .views import eliminarCuenta, index, contacto, login, modificarCuenta, ofertas, registro,Somos,TyC,agregarCuenta,modificarCuenta, eliminarCuenta
-
 urlpatterns =[
     path('', index, name="index"),
     path('contacto', contacto, name="contacto"),

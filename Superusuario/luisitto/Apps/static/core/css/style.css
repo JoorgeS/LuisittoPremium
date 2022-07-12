@@ -41,7 +41,11 @@ ul {
 .nav-brand {
     width: 64px;
 }
+#trash{
+    color: #000;
+    align-items: center;
 
+}
 
 
 
@@ -236,6 +240,8 @@ ul {
 	    border-radius: 100px;
 	    cursor: pointer;
 	    transition: .1s ease all;
+        height: 30px;
+        width: 100%;
 
 }
 .login-box{
@@ -325,13 +331,32 @@ ul {
     padding: 0px 35px;
     }
 
+    .Volver {
+        cursor: pointer;
+        display: inline-block;
+        border: 0em;
+        font-weight: bold;
+        padding: 10px 20px;
+        background: #680a80;
+        color: #ffffff;
+        font-size: 15px;
+        border: 1px solid #ffffff;
+        margin: 10px 10px;
+    }
 
 
-
+/* formulario agregarCuenta*/
+#formulario1{
+    margin: 250px;
+    padding: 100px;
+    background: #000;
+    font-size: 19px;
+}
 
 /* pie de pag*/
 
 footer {
+    margin-top: 86px;
     width: 100%;
     background: #111111;
 }
@@ -913,6 +938,17 @@ main{
     }
     .formulario__grupo-btn-enviar{
         padding-top: 100px;
+    }
+     /*agregar cuenta*/
+     #formulario1{
+        margin: 25px;
+        padding: 100px;
+        background: #000;
+        font-size: 19px;
+    }
+    .nav-brand{
+        width: 64px;
+        margin: 10px;
     }
 
     

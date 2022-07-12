@@ -25,125 +25,64 @@
     </div>
     <div class="container">
         <nav class="navMain">
-            <img src="img/logo.png" alt="Luisittopremium logo" class="nav-brand">
+            <img src="{% static 'core/img/logo.png' %}" alt="Luisittopremium logo" class="nav-brand">
             <ul class="nav-menu">
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a href="{% url 'index' %}">Inicio</a>
                 </li>
                 <li>
-                    <a href="ofertas.html">Ofertas</a>
+                    <a href="{% url 'ofertas' %}">Ofertas</a>
                 </li>
                 <li>
-                    <a href="TyC.html">Términos y Condiciones</a>
+                    <a href="{% url 'TyC' %}">Términos y Condiciones</a>
                 </li>
                 <li>
-                    <a href="Somos.html">Quiénes Somos</a>
+                    <a href="{% url 'Somos' %}">Quiénes Somos</a>
                 </li>
                 <li>
-                    <a href="contacto.html">Crear Cuenta</a>
+                    <a href="{% url 'contacto' %}">Crear Cuenta</a>
                 </li>
                 <li>
-                    <a href="Login.html">Iniciar Sesion</a>
+                    <a href="{% url 'login' %}">Iniciar Sesion</a>
                 </li>
                 <li>
-                    <a href="registro.html">Contacto</a>
+                    <a href="{% url 'registro' %}">Contacto</a>
+                </li>
+            </ul>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#"></a>
+                    <i class="fas fa-search"></i>
                 </li>
             </ul>
         </nav>
-    </div>
-    <div>       
-         <div class="cards">
-            <div>
-                <img src="img/netflixxx.jpg" alt="imagenNetflix">
-                <h3>Netfix</h3>
-                <i class="fa-regular fa-calendar-check"></i> Netflix crackeada <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> garantia por el tiempo contratado <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> Disfruta de tus series y peliculas favoritas hasta en 4 dispositivos!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="img/spotify.jpg" alt="imagenSpotify">
-                <h3>Spotify</h3>
-                <i class="fa-regular fa-calendar-check"></i> Spotify Personal <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> garantia por el tiempo contratado <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> Disfruta de musica con excelente calidad de audio!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="img/hbomax.jpg" alt="imagenHbomax">
-                <h3>HBO Max</h3>
-                <i class="fa-regular fa-calendar-check"></i> Hbo Max Privada 3 dispositivos <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> garantia por el tiempo contratado <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> Hbo ofrece su gran catalogo en series y peliculas en HD!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-                <img src="img/crunchyroll.jpg" alt="imagenCrunchyroll">
-                <h3>Crunchyroll</h3>
-                <i class="fa-regular fa-calendar-check"></i> Crunchyroll 3 pantallas <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> garantia por el tiempo contratado <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> disfruta de un amplio catalogo de animes, sin anuncios y en HD!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
-            </div>
-            <div>
-               
-                <img src="img/disneyplus.jpg" alt="imagenDisney">
-                <h3>Disney plus</h3>
-                <i class="fa-regular fa-calendar-check"></i> Cuenta crackeada <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> Garantia por el tiempo contratado <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> Ideal para el vengador de la casa o la princesa de la familia Disney llega con su catalago de peliculas y series exclusivas!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
-           
-            </div>
-            <div>
-               
-                <img src="img/amazonprimevideo.jpg" alt="imagenAmazonprimevideo">
-                <h3>Amazon prime</h3>
-                <i class="fa-regular fa-calendar-check"></i> Cuenta privada sin caidas <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> garantia por el tiempo contratado <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> Disfruta de amazon y su catalogo de series ademas de peliculas en HD gracias a su suscripcion a prime video!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
-           
-            </div>
-            <div>
-               
-                <img src="img/YTpremium.jpg" alt="imagenYTpremium">
-                <h3>YoutubePremium/YTMusic</h3>
-                <i class="fa-regular fa-calendar-check"></i> Cuenta Personal sin caidas <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> Garantia por el tiempo contratado <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> Escucha tu música favorita y descargatus videos, sin anuncios y en la calidad que necesites!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
-           
-            </div>
-            <div>
-               
-                <img src="img/paramount.jpg" alt="imagenCrunchyroll">
-                <h3>Paramount</h3>
-                <i class="fa-regular fa-calendar-check"></i> Cuena Personal sin caidas <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> Garantia por el tiempo contratado <br> <br>
-                <i class="fa-regular fa-calendar-check"></i> Paramount se une al battle royale de aplicaciones streaming con su amplio catalogo de series y peliculas exclusivas!! <br>
-                <a href="ofertas.html">Ver Oferta <i class ="fas fa-angle-double-right"></i></a>
-            
-            </div>
+            <hr>
+    <center>
+    <table border="2">
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Duracion</th>
+            <th>Modificar</th>
+            <th>Eliminar</th>
+        </tr>
+        {% for c in Cuentas%}
+        <tr>
+            <td>{{c.nombreCuenta}}</td>
+            <td>{{c.precio}}</td>
+            <td>{{c.duracion}}</td>
+            <td><a href="{% url 'modificarCuenta' c.nombreCuenta %}"> <center><i class="fa-solid fa-arrows-rotate"></i></center>
+
+            </a></td>
+            <td><a href="{% url 'eliminarCuenta' c.nombreCuenta %}"><button onclick="myFunction()"><center><i class="fa-solid fa-trash-can"></i> </center>
+
+            </a></button> </a></td>
+        </tr>
+        {% endfor %}
+    <a href="{% url 'agregarCuenta' %}">Agregar Cuenta</a>
+    </table>
+    </center>
         </div>
-    </div>
-    <div class="container my-5 text-center">
-        <button class="btn btn-danger w-100" onclick="traer()">Mostrar Información</button>
-        <div class="mt-5">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">NOMBRE</th>
-                        <th scope="col">PRECIO POR MES</th>
-                        <th scope="col">PRECIO POR 3 MESES</th>
-                    </tr>
-                </thead>
-                <tbody id="contenido">
-                    
-                </tbody>
-            </table>
-        </div>
-    </div>
     <!-- Footer -->
 
     <footer>
@@ -217,6 +156,19 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="{% static 'core/js/Main.js' %}"></script>
+    {% if messages%}
+    {% for m in messages %}
+    <script>
+        Swal.fire({
+  icon: 'success',
+  title: 'ATENCION el cambio no es reversible',
+  text: 'Borrado con exito!!!!!!',
+})
+    </script>
+    {% endfor %}
+    {% endif%}
+    {% block js %}
+    {% endblock %}
 </body>
 
 </html>
