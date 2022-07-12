@@ -23,4 +23,6 @@ urlpatterns = [
     path('', include('Apps.urls')),
     path('api/',include('rest_cuentas.urls')),
     path('accounts/', include('allauth.urls')),
+    path('login',login, {'template_name':'login.html'},name='login'),
+    path('logout/',logout_then_login, name='logout')
 ]
